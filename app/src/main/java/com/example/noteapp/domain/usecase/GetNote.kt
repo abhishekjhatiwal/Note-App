@@ -8,6 +8,6 @@ class GetNote(
 ) {
 
     suspend operator fun invoke(id: Int): Note? {
-        return repository.getNoteById(id) as Note?
+        return repository.getNoteById(id)
     }
 }
