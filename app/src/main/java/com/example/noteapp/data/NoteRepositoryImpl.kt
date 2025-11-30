@@ -1,6 +1,5 @@
 package com.example.noteapp.data
 
-import android.provider.ContactsContract
 import com.example.noteapp.domain.NoteRepository
 import com.example.noteapp.domain.model.Note
 import kotlinx.coroutines.flow.Flow
@@ -13,8 +12,8 @@ class NoteRepositoryImpl(
         return dao.getNotes()
     }
 
-    override suspend fun getNoteById(id: Int): ContactsContract.CommonDataKinds.Note? {
-        return dao.getNoteById(id) as ContactsContract.CommonDataKinds.Note?
+    override suspend fun getNoteById(id: Int): Note? {
+        return dao.getNoteById(id)
     }
 
     override suspend fun insertNote(note: Note) {

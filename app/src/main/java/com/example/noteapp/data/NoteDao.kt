@@ -1,7 +1,5 @@
 package com.example.noteapp.data
 
-
-import android.provider.ContactsContract
 import androidx.room.*
 import com.example.noteapp.domain.model.Note
 import kotlinx.coroutines.flow.Flow
